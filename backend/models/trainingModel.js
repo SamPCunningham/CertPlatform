@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-
+//mongoose allows easier passing of data to the mongodb server
+//schema is what the db will expect/accept as data
 const Schema = mongoose.Schema;
 
 export const UserSchema = new Schema({
