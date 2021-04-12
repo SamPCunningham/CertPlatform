@@ -1,6 +1,6 @@
 import React from 'react';
-import homeTable from './Home/homeTable';
-import myInfoList from './MyInfo/myInfoList';
+import HomeTable from './Home/homeTable';
+import MyInfoList from './MyInfo/myInfoList';
 
 
 export function Home() {
@@ -9,7 +9,7 @@ export function Home() {
             <div className="row">
                 <p className="col-10">Mainstream now offers HC/HFO Certification to EPA Section 608 certified techs. Find out more info here and click below to read the manual or begin the exam. HC/HFO Certification covers all aspects of techniques and regulations for the safe handling of flammable hydrocarbon and hydrofluoroolefin refrigerants.</p>
                 <p className="col-2">IMG placeholder</p>
-                <homeTable />
+                <HomeTable />
             </div>            
         </div>
     );
@@ -18,7 +18,7 @@ export function Home() {
 export function MyInfo() {
     return (
         <div>
-           <myInfoList /> 
+           <MyInfoList /> 
         </div>
         
     );

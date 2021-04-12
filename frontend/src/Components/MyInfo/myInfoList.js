@@ -1,6 +1,6 @@
 import React from 'react';
 
-const myInfoList = () => {
+const MyInfoList = () => {
     return ( 
         
             <p>There is going to be content here</p>
@@ -8,4 +8,4 @@ const myInfoList = () => {
      );
 }
  
-export default myInfoList;
+export default MyInfoList;
