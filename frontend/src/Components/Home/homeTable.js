@@ -1,9 +1,10 @@
 import React from 'react';
+import { Table } from 'react-bootstrap';
 
 const HomeTable = () => {
     return ( 
             <div className="hometable col-10">
-               <table className="table" style={{marginTop: '80px'}}>
+               <Table striped bordered hover className="table" style={{marginTop: '80px'}}>
                    <thead>
                        <tr>
                            <th>Mainstream HVAC/R Certifications</th>
@@ -60,7 +61,7 @@ const HomeTable = () => {
                        </tr>
                         
                    </tbody>                
-            </table> 
+            </Table> 
             </div>
             
      );
