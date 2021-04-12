@@ -7,7 +7,7 @@ const HomeTable = () => {
                <Table striped bordered hover className="table" style={{marginTop: '80px'}}>
                    <thead>
                        <tr>
-                           <th>Mainstream HVAC/R Certifications</th>
+                           <th style={{borderRight: 'none'}}>Mainstream HVAC/R Certifications</th>
                        </tr>
                    </thead>
                    <tbody>
