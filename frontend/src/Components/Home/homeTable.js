@@ -1,6 +1,12 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
+// Reuseable table component for tech home page and my info page
+// This is imported on pages.js
+// striped bordered hover are react table styling options that don't need any other code to initialize
+// this is why it is Table not table for the tag, so React knows it's a react element
+// This is also why you have to use the javascript className not class and style has curly brackets and camel case
+
 const HomeTable = () => {
     return ( 
             <div className="hometable col-10">
