@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import StateDrop from './stateDrop';
 
 const MyInfoList = () => {
     // this is dates for drop down menu
@@ -6,6 +7,7 @@ const MyInfoList = () => {
     const years = [];
     const currentYear = new Date().getFullYear();
     for ( let i=currentYear; i >= 1900; i -= 1) { years.push(i);}
+    const country = ["U.S.A", "Mexico","Canada", "Bahamas"]
     return ( 
         <form>
             <div className="col-xs-12 col-sm-6">
@@ -70,6 +72,84 @@ const MyInfoList = () => {
                     ))}
                 </select>
              </div>
+             <div className="form-group row">
+                 <label className="col-sm-5 col-md-4 control-label">Home Phone:<span style={{ color: "red" }}>*</span></label>
+                 <div className="col-sm-7 col-md-8">
+                     <input name="phone1" type="text" size="3" maxLength="3"></input>
+                     <input name="phone2" type="text" size="3" maxLength="3"></input>
+                     <input name="phone3" type="text" size="4" maxLength="4"></input>
+                 </div>
+             </div>
+             <div className="form-group row">
+                 <label className="col-sm-5 col-md-4 control-label">Work Phone:</label>
+                 <div className="col-sm-7 col-md-8">
+                     <input name="wphone1" type="text" size="3" maxLength="3"></input>
+                     <input name="wphone2" type="text" size="3" maxLength="3"></input>
+                     <input name="wphone3" type="text" size="4" maxLength="4"></input>
+                 </div>
+             </div>
+             <div className="form-group row">
+                 <label className="col-sm-5 col-md-4 control-label">Fax:</label>
+                 <div className="col-sm-7 col-md-8">
+                     <input name="fax1" type="text" size="3" maxLength="3"></input>
+                     <input name="fax2" type="text" size="3" maxLength="3"></input>
+                     <input name="fax3" type="text" size="4" maxLength="4"></input>
+                 </div>
+             </div>
+             <div className="form-group row">
+	             <label className="col-sm-6 col-md-4 control-label">Address:<span style={{ color: "red" }}>*</span></label>
+	             <div className="col-sm-7 col-md-8">
+	                 <input  name="addr1" type="text" defaultValue="" />
+	             </div>
+	         </div>
+	         <div className="form-group row">
+	             <label className="col-sm-6 col-md-4 control-label">Address 2:</label>
+	             <div className="col-sm-7 col-md-8">
+	                 <input  name="addr2" type="text" defaultValue="" />
+	             </div>
+	         </div>
+             <div className="form-group row">
+                 <label className="col-sm- col-md-4 control-label">State:<span style={{ color: "red" }}>*</span></label>
+                 <span className="col-3"></span>
+                 <StateDrop />
+             </div>
+             <div className="form-group row">
+                <label className="col-sm- col-md-4 control-label">Country:<span style={{ color: "red" }}>*</span></label>
+                <select className="offset-md-3">
+                    {country.map(country => (
+                        <option key={country} value={country}>{country}</option>
+                    ))}
+                </select>
+             </div>
+             <div className="form-group row">
+	             <label className="col-sm-6 col-md-4 control-label">Zip:<span style={{ color: "red" }}>*</span></label>
+	             <div className="col-sm-7 col-md-8">
+	                 <input  name="zip" type="text" defaultValue="" />
+	             </div>
+	         </div>
+             <div className="form-group row">
+	             <label className="col-sm-6 col-md-4 control-label">Tech ID</label>
+	             <div className="col-sm-7 col-md-8">
+	                 <input  name="zip" type="text" defaultValue="" disabled />
+	             </div>
+	         </div>
+             <div>
+                 <label className="col-xs-12"><strong>Would you like to receive new product updates via email?</strong><span style={{ color: "red" }}>*</span></label>
+                 <div className="form-group" style={{textAlign: "center"}}>
+                 <label className="radio-inline">
+                     <input type="radio" value="Y" name="emailUpdates" /> Yes 
+                 </label>
+                 <label className="radio-inline" style={{paddingLeft: "5px"}}>
+                     <input type="radio" value="N" name="emailUpdates" /> No
+                 </label>
+                </div>
+             </div>
+             <div className="form-group">
+                 <label className="col-xs-12">The EPA requires we publicly list 608 certifications received after 2017. Would you like to opt out of having your certification listed publicly online?<span style={{ color: "red" }}>*</span></label>
+                 <input type="checkbox" value="true" name="epaListOptOut" />
+             </div>
+             
+
 
 
 
