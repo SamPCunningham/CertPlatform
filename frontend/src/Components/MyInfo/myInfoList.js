@@ -145,8 +145,11 @@ const MyInfoList = () => {
                 </div>
              </div>
              <div className="form-group">
-                 <label className="col-xs-12">The EPA requires we publicly list 608 certifications received after 2017. Would you like to opt out of having your certification listed publicly online?<span style={{ color: "red" }}>*</span></label>
+                 <label className="col-xs-12" style={{paddingRight: "10px"}}>The EPA requires we publicly list 608 certifications received after 2017. Would you like to opt out of having your certification listed publicly online?<span style={{ color: "red" }}>*</span></label>
                  <input type="checkbox" value="true" name="epaListOptOut" />
+             </div>
+             <div>
+                 <input type="submit" />
              </div>
              
 
