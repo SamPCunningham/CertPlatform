@@ -4,7 +4,7 @@ const Footer = () => {
     let year = new Date().getFullYear();
 
     return ( 
-        <footer>&#169; {year} EPATest.com. All Rights Reserved</footer>
+        <footer>&#169; {year} All Rights Reserved</footer>
      );
 }
  

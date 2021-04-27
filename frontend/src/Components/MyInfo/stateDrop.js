@@ -1,20 +1,23 @@
 import React from 'react';
-import data from './states.json';
+import data from './allstate.json';
 
 const StateDrop = () => {
 
     return (
         <div >
             <select>
-                <optgroup label="U.S.A">
-                    {data.map(state => (
-                    <option key={state.value} value={state.value}>{state.name}</option>
+                {data.map(item => (
+                    <optgroup label={item.country}>
+                        {item.states.name.map((x, i) => (
+                            <option key={x} value={item.states.value[i]}>{x}</option>
+                        ))}
+                    </optgroup>
                 ))}
-                </optgroup>
             </select> 
         </div>
      );
 }
- 
+
+
 export default StateDrop;
 

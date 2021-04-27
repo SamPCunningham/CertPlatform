@@ -14,14 +14,6 @@ const MyInfoList = () => {
                 <p><span style={{ color: "red" }}>*</span> Indicates a required field</p>
             </div>
             <div className="form-group row">
-	            <label className="col-sm-5 col-md-4 control-label">Social Security #:<span style={{ color: "red"}}>*</span></label>
-			      <div className="col-sm-7 col-md-8">
-			          <input type="text" size="3" value="XXX" disabled />-
-			          <input type="text" size="2" value="XX" disabled />-
-			          <input type="text" size="4" value="XXXX" disabled />
-			      </div>
-	         </div>
-             <div className="form-group row">
 	            <label className="col-sm-5 col-md-4 control-label">First Name:<span style={{ color: "red"}}>*</span></label>
 	            <div className="col-sm-7 col-md-8">
 	                <input type="text" name="fname" />
